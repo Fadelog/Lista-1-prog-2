@@ -1,0 +1,14 @@
+#Questão 1
+def subir_escadas(n):#a solução para esse problema se baseia em ver de quantas formas é possível escrever um número usando somas de uns e dois(o resultafo é fibonacci)
+    if n==1:
+        return 1
+    if n==2:
+        return 2
+    anterior1=subir_escadas(n-1)
+    anterior2=subir_escadas(n-2)
+    return anterior1 + anterior2
+    
+print(subir_escadas(9))
+
+#Questão 2
+
